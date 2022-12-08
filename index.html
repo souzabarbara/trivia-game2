@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="src/index.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="/">Trivia</a></h1>
+    </header>
+    <main>
+      <div id="container">
+        <div class="question">Qual seu nome?</div>
+        <div class="nome-jogador">
+          <input
+            id="input-name-player"
+            type="text"
+            placeholder="Digite aqui seu nome.."
+            required="true"
+          />
+        </div>
+        <div>
+          <div class="question">Sobre o que deseja responder?</div>
+          <form id="questions-type-container">
+            <div class="container-input-radio">
+              <input type="radio" name="question-type" value="food" />
+              <label for="food"> Comida</label>
+            </div>
+            <div class="container-input-radio">
+              <input type="radio" name="question-type" value="beer" />
+              <label for="beer"> Cerveja</label>
+            </div>
+          </form>
+        </div>
+        <div class="btn">
+          <a href="#" id="link-start-play" onclick="setUrl()">Jogar Quiz</a>
+        </div>
+      </div>
+    </main>
+    <script src="src/index.js"></script>
+  </body>
+</html>
